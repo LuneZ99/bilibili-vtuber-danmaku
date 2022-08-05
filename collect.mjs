@@ -61,8 +61,8 @@ const collect = async prefix => {
 (async () => {
   await mkdir('zip').catch(mkdirCatch)
 
-  const years = [2019, 2020, 2021]
-  const months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  const years = [2022]
+  const months = [1, 2, 3, 4, 5, 6, 7]
   const prefixes = years.flatMap(year => months.map(month => `${year}-${month}`))
   const zps = []
   for (const prefix of prefixes) {
